@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@800&display=swap');
+
+*{
+    font-family: 'Mulish', sans-serif;
+}
+
+*:not(.decore) {
+    z-index: 1;
+}
+
+body {
+    margin-top: 100px;
+    font-size: 52px;
+    position: relative;
+    background: rgb(17, 112, 7);
+    align-items: center;
+}
+
+#canvas {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+.decore {
+    position: absolute;
+    z-index: 0;
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+    transition-duration: 0.5s;
+
+}
+
+.item>a {
+    border: solid 1px black;
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+    transition-duration: 0.5s;
+}
+
+
+.item>a:hover {
+    transform: skew(-15deg);
+    border: solid 1px rgb(116, 97, 224);
+    box-shadow: 0px 0px 15px 9px rgb(116, 97, 224);
+}
+
+.tradeoffer {
+    color: #71a5d0;
+}
+
+.steam {
+    color: #066094;
+}
+
+.discord {
+    color: #5662f6;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
